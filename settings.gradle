@@ -1,0 +1,6 @@
+rootProject.name = 'web'
+include 'Cxf'
+findProject(':Cxf')?.name = 'cxf'
+include 'Restlet'
+findProject(':Restlet')?.name = 'restlet'
+

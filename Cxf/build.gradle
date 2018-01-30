@@ -1,0 +1,16 @@
+group 'com.liuxiaonian'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.apache.cxf:cxf-core:3.1.10')
+    compile('org.apache.cxf:cxf-rt-rs-client:3.1.10')
+}

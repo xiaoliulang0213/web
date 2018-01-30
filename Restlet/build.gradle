@@ -1,0 +1,20 @@
+group 'com.liuxiaonian'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url 'http://maven.restlet.com/'
+    }
+}
+
+dependencies {
+    compile('org.restlet.jee:org.restlet:2.3.10')
+    compile('org.restlet.jee:org.restlet.ext.jackson:2.3.10')
+}
